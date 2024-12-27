@@ -67,21 +67,39 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R                      &kp T                                                                 &kp Y        &kp U  &lt 5 I    &kp O    &kp P
+&kp Q             &kp W         &kp E         &kp R                      &kp T                                                                 &kp Y        &kp U  &lt 6 I    &kp O    &kp P
 &kp A             &kp S         &kp D         &kp F                      &kp G        &kp LS(LG(S))                             &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp TAB
 &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                      &kp B        &mkp LCLK                                 &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp RIGHT_SHIFT
-&kp LS(ESCAPE)    &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 LEFT_ALT  &lt 4 SPACE  &lt_to_layer_0 3 LANG_ZENKAKUHANKAKU      &kp BACKSPACE  &lt 1 ENTER                             &kp DEL
+&kp LS(ESCAPE)    &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 3 LEFT_ALT  &lt 1 SPACE  &lt_to_layer_0 5 LANG_ZENKAKUHANKAKU      &kp BACKSPACE  &lt 2 ENTER                             &kp DEL
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
         };
 
-        FUNCTION {
+        MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                       &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
-&trans  &trans  &trans  &trans  &trans  &trans      &kp F13  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans  &trans  &trans  &trans  &kp F11
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans                          &kp F12
+&trans  &trans     &trans          &trans  &trans                      &trans         &trans          &kp UP_ARROW    &trans           &trans
+&trans  &kp LCTRL  &kp LEFT_SHIFT  &trans  &trans  &trans      &trans  &kp BACKSPACE  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
+&trans  &trans     &trans          &trans  &trans  &trans      &trans  &trans         &trans          &mkp RCLK       &trans           &trans
+&trans  &trans     &trans          &trans  &trans  &trans      &trans  &trans                                                          &trans
+            >;
+        };
+
+        Number {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                      &trans  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                            &trans
+            >;
+        };
+
+        Function {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                      &trans  &kp F7  &kp F8  &kp F9  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp F4  &kp F5  &kp F6  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp F1  &kp F2  &kp F3  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
         };
 
@@ -103,15 +121,6 @@
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
-        };
-
-        MOUSE {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans          &kp UP_ARROW    &trans           &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans          &mkp RCLK       &trans           &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                   &trans
-            >;
         };
 
         SCROLL {
