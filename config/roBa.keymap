@@ -67,10 +67,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R                      &kp T                                          &kp Y        &kp U  &lt 6 I    &kp O    &kp P
-&kp A             &kp S         &kp D         &kp F                      &kp G        &kp LS(LG(S))      &kp EQUAL      &kp H        &kp J  &kp K      &kp L    &kp TAB
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                      &kp B        &mkp LCLK          &mkp MB2       &kp N        &kp M  &kp COMMA  &kp DOT  &mt RCTRL SQT
-&kp ESCAPE        &kp LEFT_WIN  &kp LEFT_WIN  &lt_to_layer_0 3 LEFT_ALT  &lt 1 SPACE  &kp LA(GRAVE)      &kp BACKSPACE  &lt 2 ENTER                             &kp EQUAL
+&kp Q             &kp W      &kp E         &kp R                      &kp T                                          &kp Y        &kp U  &lt 7 I    &kp O    &kp P
+&kp A             &kp S      &kp D         &kp F                      &kp G        &kp LS(LG(S))      &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp TAB
+&mt LEFT_SHIFT Z  &kp X      &kp C         &kp V                      &kp B        &mkp LCLK          &mkp MB2       &kp N        &kp M  &kp COMMA  &kp DOT  &mt RCTRL SEMICOLON
+&kp ESCAPE        &kp EQUAL  &kp LEFT_WIN  &lt_to_layer_0 4 LEFT_ALT  &lt 1 SPACE  &kp LA(GRAVE)      &kp BACKSPACE  &lt 2 ENTER                             &kp SQT
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -91,6 +91,15 @@
 &kp ASTERISK     &kp DOLLAR   &kp GRAVE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans      &trans  &kp MINUS     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp SLASH
 &kp QUESTION     &kp TILDE    &kp CARET  &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans      &trans  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans
 &trans           &trans       &trans     &trans                &trans                 &trans      &trans  &trans                                                  &trans
+            >;
+        };
+
+        function {
+            bindings = <
+&kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT                      &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp F1           &kp F2       &kp F3    &kp F4      &kp F5       &trans      &trans  &kp F6     &kp F7         &kp F8        &kp F9                &kp F10
+&trans           &trans       &trans    &trans      &trans       &trans      &trans  &trans     &trans         &trans        &kp F11               &kp F12
+&trans           &trans       &trans    &trans      &trans       &trans      &trans  &trans                                                        &trans
             >;
         };
 
