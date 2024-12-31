@@ -78,10 +78,10 @@
 
         MOUSE {
             bindings = <
-&trans      &trans  &kp LC(X)  &trans     &trans                                      &kp LC(PAGE_UP)     &kp PAGE_UP                    &mt LA(UP_ARROW) UP_ARROW      &kp PAGE_DOWN                    &kp LC(PAGE_DOWN)
-&kp RCTRL   &trans  &kp LC(C)  &kp LC(Z)  &trans  &trans      &kp LC(LS(LEFT_ARROW))  &kp LC(LEFT_ARROW)  &mt LA(LEFT_ARROW) LEFT_ARROW  &mt LA(DOWN_ARROW) DOWN_ARROW  &mt LA(RIGHT_ARROW) RIGHT_ARROW  &kp LC(RIGHT_ARROW)
-&kp LSHIFT  &trans  &kp LC(V)  &trans     &trans  &trans      &kp LS(HOME)            &kp LC(HOME)        &kp HOME                       &mkp MB2                       &kp END                          &kp LC(END)
-&trans      &trans  &trans     &trans     &trans  &trans      &trans                  &trans                                                                                                             &trans
+&kp NUMBER_1  &trans     &trans     &trans     &trans                         &kp LC(PAGE_UP)         &kp PAGE_UP                    &mt LA(UP_ARROW) UP_ARROW      &kp PAGE_DOWN                    &kp LC(PAGE_DOWN)
+&kp RCTRL     &trans     &trans     &kp LC(Z)  &kp LC(A)  &trans      &trans  &kp LC(LS(LEFT_ARROW))  &mt LA(LEFT_ARROW) LEFT_ARROW  &mt LA(DOWN_ARROW) DOWN_ARROW  &mt LA(RIGHT_ARROW) RIGHT_ARROW  &kp LC(LS(RIGHT_ARROW))
+&kp LSHIFT    &kp LC(X)  &kp LC(C)  &kp LC(V)  &trans     &trans      &trans  &kp LC(LS(HOME))        &kp HOME                       &mkp MB2                       &kp END                          &kp LC(LS(END))
+&trans        &trans     &trans     &trans     &trans     &trans      &trans  &trans                                                                                                                 &trans
             >;
         };
 
