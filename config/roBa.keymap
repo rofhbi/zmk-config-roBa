@@ -41,6 +41,26 @@
             bindings = <&bt BT_SEL 3>;
             key-positions = <7 8 9 6>;
         };
+
+        a {
+            bindings = <&kp GRAVE>;
+            key-positions = <2 3>;
+        };
+
+        b {
+            bindings = <&kp TILDE>;
+            key-positions = <7 6>;
+        };
+
+        c {
+            bindings = <&kp BACKSLASH>;
+            key-positions = <13 12>;
+        };
+
+        d {
+            bindings = <&kp PIPE>;
+            key-positions = <18 19>;
+        };
     };
 
     macros {
