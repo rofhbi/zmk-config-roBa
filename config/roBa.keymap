@@ -139,7 +139,7 @@
 &mt LCTRL ESCAPE   &kp ASTERISK  &mkp MB3  &mkp LCLK       &lt 1 SPACE  &kp TAB             &lt 3 BACKSPACE  &lt 2 ENTER                             &mt RIGHT_WIN SQT
             >;
 
-            sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
+            sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
         };
 
         MOUSE {
