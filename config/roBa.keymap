@@ -91,6 +91,21 @@
             bindings = <&kp RIGHT_BRACE>;
             key-positions = <31 32>;
         };
+
+        aaa {
+            bindings = <&kp LC(X)>;
+            key-positions = <3 4>;
+        };
+
+        bbb {
+            bindings = <&kp LC(C)>;
+            key-positions = <13 14>;
+        };
+
+        ccc {
+            bindings = <&kp LC(V)>;
+            key-positions = <25 26>;
+        };
     };
 
     macros {
@@ -124,15 +139,15 @@
 &mt LCTRL ESCAPE   &kp ASTERISK  &mkp MB3  &mkp LCLK       &lt 1 SPACE  &kp TAB             &lt 3 BACKSPACE  &lt 2 ENTER                             &mt RIGHT_WIN SQT
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+            sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
         };
 
         MOUSE {
             bindings = <
-&kp NUMBER_1  &trans     &trans     &trans     &trans                         &kp LC(PAGE_UP)         &kp PAGE_UP                    &mt LA(UP_ARROW) UP_ARROW      &kp PAGE_DOWN                    &kp LC(PAGE_DOWN)
-&kp RCTRL     &trans     &trans     &kp LC(Z)  &kp LC(A)  &trans      &trans  &kp LC(LS(LEFT_ARROW))  &mt LA(LEFT_ARROW) LEFT_ARROW  &mt LA(DOWN_ARROW) DOWN_ARROW  &mt LA(RIGHT_ARROW) RIGHT_ARROW  &kp LC(LS(RIGHT_ARROW))
-&kp LSHIFT    &kp LC(X)  &kp LC(C)  &kp LC(V)  &trans     &trans      &trans  &kp LC(LS(HOME))        &kp HOME                       &mkp MB2                       &kp END                          &kp LC(LS(END))
-&trans        &trans     &trans     &trans     &trans     &trans      &trans  &trans                                                                                                                 &trans
+&kp NUMBER_1  &trans     &trans     &trans     &trans                               &kp LC(PAGE_UP)         &kp PAGE_UP                    &mt LA(UP_ARROW) UP_ARROW      &kp PAGE_DOWN                    &kp LC(PAGE_DOWN)
+&kp RCTRL     &trans     &trans     &kp LC(Z)  &kp LC(Y)  &msc SCRL_UP      &trans  &kp LC(LS(LEFT_ARROW))  &mt LA(LEFT_ARROW) LEFT_ARROW  &mt LA(DOWN_ARROW) DOWN_ARROW  &mt LA(RIGHT_ARROW) RIGHT_ARROW  &kp LC(LS(RIGHT_ARROW))
+&kp LSHIFT    &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(A)  &trans            &trans  &kp LS(HOME)            &kp HOME                       &mkp MB2                       &kp END                          &kp LC(LS(END))
+&trans        &trans     &trans     &trans     &trans     &trans            &trans  &trans                                                                                                                 &trans
             >;
         };
 
